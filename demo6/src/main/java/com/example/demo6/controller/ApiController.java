@@ -20,6 +20,12 @@ import com.example.demo6.dto.User;
 @RequestMapping("/api")
 @Validated
 public class ApiController {
+	
+	@GetMapping("/test")
+	public String test() {
+		System.out.println("asasdasd");
+		return "TEST";
+	}
 
 	// http://localhost:8080/api/user?name=?&age=?
 	@GetMapping("/user")
